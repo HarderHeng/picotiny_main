@@ -4,11 +4,6 @@ module picotiny (
   input clk,
   input resetn,
 
-  output       tmds_clk_n,
-  output       tmds_clk_p,
-  output [2:0] tmds_d_n,
-  output [2:0] tmds_d_p,
-
   output  flash_clk,
   output  flash_csb,
   inout   flash_mosi,
@@ -287,28 +282,5 @@ picorv32 #(
 
 
 assign wbp_ready = 1'b1;
- 
-wire svo_term_valid;
-assign svo_term_valid = (uart_valid && uart_ready) & (~uart_addr[2]) & uart_wstrb[0];
-
-svo_hdmi_top u_hdmi (
-	.clk(clk_p),
-	.resetn(sys_resetn),
-
-	// video clocks
-	.clk_pixel(clk_p),
-	.clk_5x_pixel(clk_p5),
-	.locked(pll_lock),
-
-	.term_in_tvalid( svo_term_valid ),
-	.term_out_tready(),
-	.term_in_tdata( uart_wdata[7:0] ),
-
-	// output signals
-	.tmds_clk_n(tmds_clk_n),
-	.tmds_clk_p(tmds_clk_p),
-	.tmds_d_n(tmds_d_n),
-	.tmds_d_p(tmds_d_p)
-);
 
 endmodule

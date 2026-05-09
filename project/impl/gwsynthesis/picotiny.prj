@@ -33,8 +33,7 @@
         <Option type="looplimit" value="2000"/>
         <Option type="output_file" value="C:\Users\l1506\work\TangNano-9K-example-main\TangNano-9K-example-main\picotiny_main\project\impl\gwsynthesis\picotiny.vg"/>
         <Option type="print_all_synthesis_warning" value="0"/>
-        <Option type="ram_rw_check" value="1"/>
-        <Option type="top_module" value="picotiny"/>
+        <Option type="ram_rw_check" value="0"/>
         <Option type="vcc" value="1.2"/>
         <Option type="verilog_language" value="verilog-2001"/>
         <Option type="vhdl_language" value="vhdl-1993"/>

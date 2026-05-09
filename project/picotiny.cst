@@ -6,14 +6,6 @@
 //Device: GW1NR-9C
 //Created Time: Thu 01 20 13:24:46 2022
 
-IO_LOC "tmds_d_p[0]" 71,70;
-IO_PORT "tmds_d_p[0]" PULL_MODE=NONE DRIVE=8;
-IO_LOC "tmds_d_p[1]" 73,72;
-IO_PORT "tmds_d_p[1]" PULL_MODE=NONE DRIVE=8;
-IO_LOC "tmds_d_p[2]" 75,74;
-IO_PORT "tmds_d_p[2]" PULL_MODE=NONE DRIVE=8;
-IO_LOC "tmds_clk_p" 69,68;
-IO_PORT "tmds_clk_p" PULL_MODE=NONE DRIVE=8;
 IO_LOC "flash_csb" 60;
 IO_PORT "flash_csb" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
 IO_LOC "flash_clk" 59;
