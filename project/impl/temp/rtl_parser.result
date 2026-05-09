@@ -196,58 +196,6 @@
   ]
  },
  {
-  "InstFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
-  "InstLine" : 2168,
-  "InstName" : "picorv32_regs",
-  "ModuleFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
-  "ModuleLine" : 2168,
-  "ModuleName" : "picorv32_regs"
- },
- {
-  "InstFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
-  "InstLine" : 2511,
-  "InstName" : "picorv32_axi",
-  "ModuleFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
-  "ModuleLine" : 2511,
-  "ModuleName" : "picorv32_axi",
-  "SubInsts" : [
-   {
-    "InstFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
-    "InstLine" : 2613,
-    "InstName" : "axi_adapter",
-    "ModuleFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
-    "ModuleLine" : 2725,
-    "ModuleName" : "picorv32_axi_adapter"
-   },
-   {
-    "InstFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
-    "InstLine" : 2668,
-    "InstName" : "picorv32_core",
-    "ModuleFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
-    "ModuleLine" : 62,
-    "ModuleName" : "picorv32"
-   }
-  ]
- },
- {
-  "InstFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
-  "InstLine" : 2809,
-  "InstName" : "picorv32_wb",
-  "ModuleFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
-  "ModuleLine" : 2809,
-  "ModuleName" : "picorv32_wb",
-  "SubInsts" : [
-   {
-    "InstFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
-    "InstLine" : 2932,
-    "InstName" : "picorv32_core",
-    "ModuleFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
-    "ModuleLine" : 62,
-    "ModuleName" : "picorv32"
-   }
-  ]
- },
- {
   "InstFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/memory.v",
   "InstLine" : 5,
   "InstName" : "PicoMem_2kx8_SRAM_behav",
