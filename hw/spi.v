@@ -17,7 +17,7 @@
  *
  */
 
-module spimemio_puya (
+module spi (
 	input clk, resetn,
 
 	input valid,

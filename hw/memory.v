@@ -29,7 +29,7 @@ assign dout = mem_out;
 
 endmodule
 
-module PicoMem_BOOT_SRAM_8KB (
+module bootrom (
  input clk,
  input resetn,
  input mem_s_valid,
@@ -119,7 +119,7 @@ assign mem_s_ready = mem_ready;
 endmodule
 
 
-module PicoMem_SRAM_8KB (
+module sram (
  input clk,
  input resetn,
  input mem_s_valid,

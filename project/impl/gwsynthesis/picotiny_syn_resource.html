@@ -30,7 +30,7 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <th class="label">ROM16 NUMBER</th>
 </tr>
 <tr>
-<td class="label">picotiny (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
+<td class="label">soc (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
@@ -39,8 +39,8 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_pll
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--pll
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
@@ -49,8 +49,8 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_div_5
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--clkdiv
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
@@ -59,8 +59,8 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_Reset_Sync
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--reset_sync
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v)</td>
 <td align = "center">4</td>
 <td align = "center">4</td>
 <td align = "center">2</td>
@@ -69,28 +69,28 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_picorv32
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--cpu
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v)</td>
 <td align = "center">571</td>
 <td align = "center">314</td>
-<td align = "center">1217</td>
+<td align = "center">1263</td>
 <td align = "center">-</td>
 <td align = "center">2</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_PicoMem_SRAM_8KB_7
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--sram
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v)</td>
 <td align = "center">1</td>
 <td align = "center">-</td>
-<td align = "center">4</td>
+<td align = "center">3</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
 <td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sram_3
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picomemory.v)</td>
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/memory.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
@@ -100,7 +100,7 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 </tr>
 <td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sram_2
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picomemory.v)</td>
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/memory.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
@@ -110,7 +110,7 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 </tr>
 <td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sram_1
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picomemory.v)</td>
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/memory.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
@@ -120,7 +120,7 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 </tr>
 <td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sram_0
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picomemory.v)</td>
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/memory.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
@@ -129,48 +129,48 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_PicoMem_Mux_1_4_8
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--mem_mux
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
-<td align = "center">157</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_PicoMem_Mux_1_4_picop
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">1</td>
+<td align = "center">161</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_PicoMem_SPI_Flash_18
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--periph_mux
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
-<td align = "center">8</td>
+<td align = "center">2</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_spimemio
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picoperipheral.v)</td>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--spi_flash
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">9</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_spi
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/peripheral.v)</td>
 <td align = "center">122</td>
 <td align = "center">22</td>
-<td align = "center">184</td>
+<td align = "center">199</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
 <td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--xfer
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/spimemio_puya.v)</td>
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/spi.v)</td>
 <td align = "center">35</td>
 <td align = "center">-</td>
 <td align = "center">55</td>
@@ -179,8 +179,8 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_boot_sram
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--bootrom
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v)</td>
 <td align = "center">1</td>
 <td align = "center">-</td>
 <td align = "center">2</td>
@@ -190,7 +190,7 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 </tr>
 <td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sram_3
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picomemory.v)</td>
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/memory.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
@@ -200,7 +200,7 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 </tr>
 <td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sram_2
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picomemory.v)</td>
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/memory.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
@@ -210,7 +210,7 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 </tr>
 <td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sram_1
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picomemory.v)</td>
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/memory.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
@@ -220,7 +220,7 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 </tr>
 <td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sram_0
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picomemory.v)</td>
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/memory.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
@@ -229,18 +229,18 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_PicoMem_GPIO
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--gpio_inst
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v)</td>
 <td align = "center">97</td>
 <td align = "center">-</td>
-<td align = "center">58</td>
+<td align = "center">59</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 </tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_PicoMem_UART
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--uart
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v)</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">5</td>
@@ -250,153 +250,13 @@ table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-co
 <td align = "center">-</td>
 </tr>
 <td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_simpleuart
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picoperipheral.v)</td>
+ (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/peripheral.v)</td>
 <td align = "center">131</td>
 <td align = "center">124</td>
-<td align = "center">92</td>
+<td align = "center">95</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
 <td align = "center">-</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_hdmi
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v)</td>
-<td align = "center">8</td>
-<td align = "center">-</td>
-<td align = "center">1</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_tcard
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_hdmi_top.v)</td>
-<td align = "center">145</td>
-<td align = "center">-</td>
-<td align = "center">318</td>
-<td align = "center">-</td>
-<td align = "center">1</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_term
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_hdmi_top.v)</td>
-<td align = "center">243</td>
-<td align = "center">77</td>
-<td align = "center">847</td>
-<td align = "center">-</td>
-<td align = "center">1</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_overlay
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_hdmi_top.v)</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">51</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_buf_in
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_utils.v)</td>
-<td align = "center">24</td>
-<td align = "center">-</td>
-<td align = "center">1</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_axis_pipe
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_utils.v)</td>
-<td align = "center">48</td>
-<td align = "center">-</td>
-<td align = "center">6</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_buf_over
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_utils.v)</td>
-<td align = "center">3</td>
-<td align = "center">-</td>
-<td align = "center">2</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_axis_pipe
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_utils.v)</td>
-<td align = "center">8</td>
-<td align = "center">-</td>
-<td align = "center">6</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_buf_out
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_utils.v)</td>
-<td align = "center">24</td>
-<td align = "center">-</td>
-<td align = "center">1</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_axis_pipe
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_utils.v)</td>
-<td align = "center">48</td>
-<td align = "center">-</td>
-<td align = "center">28</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_enc
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_hdmi_top.v)</td>
-<td align = "center">269</td>
-<td align = "center">6</td>
-<td align = "center">241</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">7</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_tmds_0
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_hdmi_top.v)</td>
-<td align = "center">18</td>
-<td align = "center">35</td>
-<td align = "center">96</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">3</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_tmds_1
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_hdmi_top.v)</td>
-<td align = "center">18</td>
-<td align = "center">35</td>
-<td align = "center">112</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">3</td>
-<td align = "center">-</td>
-</tr>
-<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--svo_tmds_2
- (C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_hdmi_top.v)</td>
-<td align = "center">19</td>
-<td align = "center">35</td>
-<td align = "center">108</td>
-<td align = "center">-</td>
-<td align = "center">-</td>
-<td align = "center">3</td>
 <td align = "center">-</td>
 </tr>
 </table>

@@ -1,25 +1,25 @@
 `timescale 1ns/1ps
 
-module Reset_Sync (
+module reset_sync (
  input clk,
  input ext_reset,
  output resetn
 );
 
  reg [3:0] reset_cnt = 0;
- 
+
  always @(posedge clk or negedge ext_reset) begin
      if (~ext_reset)
          reset_cnt <= 4'b0;
      else
          reset_cnt <= reset_cnt + !resetn;
  end
- 
+
  assign resetn = &reset_cnt;
 
 endmodule
 
-module PicoMem_UART (
+module uart (
  input clk,
  input resetn,
  input ser_rx,
@@ -34,18 +34,18 @@ module PicoMem_UART (
 
  wire [31:0] reg_dat_do;
  wire [31:0] reg_div_do;
- 
+
  assign mem_s_rdata = mem_s_addr[2] ?
                       reg_div_do :
                       reg_dat_do;
- 
+
  wire reg_dat_sel = mem_s_valid && ~mem_s_addr[2];
  wire reg_div_sel = mem_s_valid && mem_s_addr[2];
- 
+
  wire reg_dat_wait;
- 
+
  assign mem_s_ready = reg_div_sel || (reg_dat_sel && ~reg_dat_wait);
- 
+
  simpleuart u_simpleuart (
    .clk(clk),
    .resetn(resetn),
@@ -63,7 +63,7 @@ module PicoMem_UART (
 
 endmodule
 
-module PicoMem_GPIO (
+module gpio (
  input clk,
  input resetn,
  input busin_valid,
@@ -78,7 +78,7 @@ module PicoMem_GPIO (
  reg [31:0] oe_r;
  reg [31:0] rdata_r;
  reg ready_r;
- 
+
     always @(posedge clk) begin
         if (!resetn) begin
             ready_r <= 1'b0;
@@ -113,20 +113,20 @@ module PicoMem_GPIO (
             end
         end
     end
- 
+
  assign busin_ready = ready_r;
  assign busin_rdata = rdata_r;
- 
+
  genvar i;
  generate
      for (i = 0; i < 32; i = i + 1) begin
          assign io[i] = oe_r[i] ? out_r[i] : 1'bz;
      end
  endgenerate
- 
+
 endmodule
 
-module PicoMem_SPI_Flash (
+module spi_flash (
  input clk,
  input resetn,
  input flash_mem_valid,
@@ -154,7 +154,7 @@ wire flash_io1_oe;
 wire flash_io1_di;
 wire flash_io1_do;
 
- spimemio_puya u_spimemio (
+ spi u_spi (
      .clk(clk),
      .resetn(resetn),
 
@@ -166,9 +166,9 @@ wire flash_io1_do;
      .cfgreg_we( {4{flash_cfg_valid}} & flash_cfg_wstrb ),
      .cfgreg_di(flash_cfg_wdata),
      .cfgreg_do(flash_cfg_rdata),
-	 
-	 .flash_clk(flash_clk),
-	 .flash_csb(flash_csb),
+
+     .flash_clk(flash_clk),
+     .flash_csb(flash_csb),
 
      .flash_io0_oe(flash_io0_oe),
      .flash_io0_di(flash_io0_di),
@@ -188,7 +188,7 @@ wire flash_io1_do;
 endmodule
 
 
-module PicoMem_Mux_1_4 #(
+module mux #(
  parameter PICOS0_ADDR_BASE = 32'h0000_0000,
  parameter PICOS0_ADDR_MASK = 32'hC000_0000,
  parameter PICOS1_ADDR_BASE = 32'h4000_0000,
@@ -233,43 +233,43 @@ module PicoMem_Mux_1_4 #(
  wire picos1_match = ~|((picom_addr ^ PICOS1_ADDR_BASE) & PICOS1_ADDR_MASK);
  wire picos2_match = ~|((picom_addr ^ PICOS2_ADDR_BASE) & PICOS2_ADDR_MASK);
  wire picos3_match = ~|((picom_addr ^ PICOS3_ADDR_BASE) & PICOS3_ADDR_MASK);
- 
+
  wire picos0_sel = picos0_match;
  wire picos1_sel = picos1_match & (~picos0_match);
  wire picos2_sel = picos2_match & (~picos0_match) & (~picos1_match);
  wire picos3_sel = picos3_match & (~picos0_match) & (~picos1_match) & (~picos2_match);
- 
+
  // master
  assign picom_rdata = picos0_sel ? picos0_rdata :
                       picos1_sel ? picos1_rdata :
                       picos2_sel ? picos2_rdata :
                       picos3_sel ? picos3_rdata :
                       32'b0;
- 
+
  assign picom_ready = picos0_sel ? picos0_ready :
                       picos1_sel ? picos1_ready :
                       picos2_sel ? picos2_ready :
                       picos3_sel ? picos3_ready :
                       1'b0;
- 
+
  // slave 0
  assign picos0_valid = picom_valid & picos0_sel;
  assign picos0_addr = picom_addr;
  assign picos0_wdata = picom_wdata;
  assign picos0_wstrb = picom_wstrb;
- 
+
  // slave 1
  assign picos1_valid = picom_valid & picos1_sel;
  assign picos1_addr = picom_addr;
  assign picos1_wdata = picom_wdata;
  assign picos1_wstrb = picom_wstrb;
- 
+
  // slave 2
  assign picos2_valid = picom_valid & picos2_sel;
  assign picos2_addr = picom_addr;
  assign picos2_wdata = picom_wdata;
  assign picos2_wstrb = picom_wstrb;
- 
+
  // slave 3
  assign picos3_valid = picom_valid & picos3_sel;
  assign picos3_addr = picom_addr;

@@ -7,7 +7,7 @@ Running placement......
 [10%] Placement Phase 0 completed
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
-WARN  (TA1132) :  'u_div_5/clkdiv_inst/CLKOUT.default_gen_clk' was determined to be a clock but was not created.
+WARN  (TA1132) :  'clkdiv/clkdiv_inst/CLKOUT.default_gen_clk' was determined to be a clock but was not created.
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -26,5 +26,5 @@ Generate file "C:\Users\l1506\work\TangNano-9K-example-main\TangNano-9K-example-
 Generate file "C:\Users\l1506\work\TangNano-9K-example-main\TangNano-9K-example-main\picotiny_main\project\impl\pnr\picotiny.rpt.html" completed
 Generate file "C:\Users\l1506\work\TangNano-9K-example-main\TangNano-9K-example-main\picotiny_main\project\impl\pnr\picotiny.rpt.txt" completed
 Generate file "C:\Users\l1506\work\TangNano-9K-example-main\TangNano-9K-example-main\picotiny_main\project\impl\pnr\picotiny.tr.html" completed
-Sat May  9 21:31:16 2026
+Sat May  9 21:52:20 2026
 

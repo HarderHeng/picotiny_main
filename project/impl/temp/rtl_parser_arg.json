@@ -2,63 +2,27 @@
  "Device" : "GW1NR-9C",
  "Files" : [
   {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_defines.vh",
+   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/soc.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_enc.v",
+   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/cpu.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_hdmi_top.v",
+   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/peripheral.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_openldi.v",
+   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/memory.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_tcard.v",
+   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/uart.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_term.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_tmds.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_utils.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/hdmi/svo_vdma.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picomemory.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picoperipheral.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picorv32.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/picotiny.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/simpleuart.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/spimemio_puya.v",
+   "Path" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/spi.v",
    "Type" : "verilog"
   },
   {
@@ -95,7 +59,7 @@
  ],
  "LoopLimit" : 2000,
  "ResultFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/project/impl/temp/rtl_parser.result",
- "Top" : "",
+ "Top" : "soc",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"
 }
