@@ -110,16 +110,16 @@
       "InstLine" : 157,
       "InstName" : "u_spi",
       "ModuleFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/spi.v",
-      "ModuleLine" : 20,
+      "ModuleLine" : 3,
       "ModuleName" : "spi",
       "SubInsts" : [
        {
         "InstFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/spi.v",
-        "InstLine" : 185,
+        "InstLine" : 116,
         "InstName" : "xfer",
         "ModuleFile" : "C:/Users/l1506/work/TangNano-9K-example-main/TangNano-9K-example-main/picotiny_main/hw/spi.v",
-        "ModuleLine" : 418,
-        "ModuleName" : "spimemio_xfer"
+        "ModuleLine" : 311,
+        "ModuleName" : "spi_xfer"
        }
       ]
      }

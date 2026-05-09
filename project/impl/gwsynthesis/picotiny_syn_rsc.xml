@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="soc" T_Register="962(0)" T_Alu="464(0)" T_Lut="1855(0)" T_Bsram="10(0)">
+<Module name="soc" T_Register="960(0)" T_Alu="472(0)" T_Lut="1788(0)" T_Bsram="10(0)">
  <SubModule name="pll"/>
  <SubModule name="clkdiv"/>
  <SubModule name="reset_sync" Register="4" Alu="4" Lut="2" T_Register="4(4)" T_Alu="4(4)" T_Lut="2(2)"/>
- <SubModule name="cpu" Register="571" Alu="314" Lut="1263" Bsram="2" T_Register="571(571)" T_Alu="314(314)" T_Lut="1263(1263)" T_Bsram="2(2)"/>
+ <SubModule name="cpu" Register="571" Alu="314" Lut="1239" Bsram="2" T_Register="571(571)" T_Alu="314(314)" T_Lut="1239(1239)" T_Bsram="2(2)"/>
  <SubModule name="sram" Register="1" Lut="3" T_Register="1(1)" T_Lut="3(3)" T_Bsram="4(0)">
   <SubModule name="u_sram_3" Bsram="1" T_Bsram="1(1)"/>
   <SubModule name="u_sram_2" Bsram="1" T_Bsram="1(1)"/>
   <SubModule name="u_sram_1" Bsram="1" T_Bsram="1(1)"/>
   <SubModule name="u_sram_0" Bsram="1" T_Bsram="1(1)"/>
  </SubModule>
- <SubModule name="mem_mux" Lut="161" T_Lut="161(161)"/>
- <SubModule name="periph_mux" Lut="2" T_Lut="2(2)"/>
- <SubModule name="spi_flash" Lut="9" T_Register="157(0)" T_Alu="22(0)" T_Lut="263(9)">
-  <SubModule name="u_spi" Register="122" Alu="22" Lut="199" T_Register="157(122)" T_Alu="22(22)" T_Lut="254(199)">
-   <SubModule name="xfer" Register="35" Lut="55" T_Register="35(35)" T_Lut="55(55)"/>
+ <SubModule name="mem_mux" Lut="163" T_Lut="163(163)"/>
+ <SubModule name="periph_mux" Lut="3" T_Lut="3(3)"/>
+ <SubModule name="spi_flash" Lut="7" T_Register="155(0)" T_Alu="30(0)" T_Lut="217(7)">
+  <SubModule name="u_spi" Register="122" Alu="30" Lut="178" T_Register="155(122)" T_Alu="30(30)" T_Lut="210(178)">
+   <SubModule name="xfer" Register="33" Lut="32" T_Register="33(33)" T_Lut="32(32)"/>
   </SubModule>
  </SubModule>
  <SubModule name="bootrom" Register="1" Lut="2" T_Register="1(1)" T_Lut="2(2)" T_Bsram="4(0)">
